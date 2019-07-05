@@ -2,7 +2,8 @@ export const types = {
   INCREMENT: "counter/INCREMENT",
   INCREMENT_ASYNC: "counter/INCREMENT_ASYNC",
   DECREMENT: "counter/DECREMENT",
-  RESET: "counter/RESET"
+  RESET: "counter/RESET",
+  LOADING: "counter/LOADING"
 };
 
 type ActionTypes = $Keys<typeof types>;
@@ -15,8 +16,13 @@ type DecrementAction = {
   type: ActionTypes
 };
 
-export type Action = IncrementAction | DecrementAction;
+type LoadingAction = {
+  type: ActionTypes
+};
+
+export type Action = IncrementAction | DecrementAction | LoadingAction;
 
 export interface CounterState {
   count: number;
+  loading: boolean;
 }

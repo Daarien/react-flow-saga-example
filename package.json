@@ -8,6 +8,7 @@
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
     "react-scripts": "3.0.1",
+    "react-spinners": "^0.5.5",
     "redux": "^4.0.1",
     "redux-saga": "^1.0.4",
     "typescript": "^3.5.2"

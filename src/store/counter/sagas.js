@@ -1,4 +1,5 @@
-import { put, takeEvery, all } from "redux-saga/effects";
+// @flow
+import { put, takeEvery } from "redux-saga/effects";
 import { types } from "./actions";
 
 function delay(ms: number) {
@@ -7,19 +8,12 @@ function delay(ms: number) {
 
 // Our worker Saga: will perform the async increment task
 function* incrementAsync() {
+  yield put({ type: types.LOADING });
   yield delay(1000);
   yield put({ type: types.INCREMENT });
 }
 
 // Our watcher Saga: spawn a new incrementAsync task on each INCREMENT_ASYNC
-function* watchIncrementAsync() {
+export function* watchIncrementAsync() {
   yield takeEvery(types.INCREMENT_ASYNC, incrementAsync);
-}
-
-// notice how we now only export the rootSaga
-// single entry point to start all Sagas at once
-// $FlowIgnore
-export default function* rootSaga() {
-  // $FlowIgnore
-  yield all([watchIncrementAsync()]);
 }

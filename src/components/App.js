@@ -2,7 +2,8 @@
 import React from "react";
 import logo from "../assets/logo.svg";
 import "./App.css";
-import Counter from "./Counter";
+import Counter from "./Counter/ConnectedCounter";
+import Dogs from "./Dogs/ConnectedDogs";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
           Learn React
         </a>
         <Counter />
+        <hr />
+        <Dogs />
       </header>
     </div>
   );
