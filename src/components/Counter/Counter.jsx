@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import type { CounterState } from "../store/counter/actions";
+import type { CounterState } from "../../store/counter/actions";
 import { ClipLoader } from "react-spinners";
 
 interface Props extends CounterState {

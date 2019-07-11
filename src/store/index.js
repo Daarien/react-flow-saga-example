@@ -1,3 +1,4 @@
+// @flow
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import createSagaMiddleware from "redux-saga";
 import { all } from "redux-saga/effects";
@@ -14,6 +15,7 @@ import { watchGetDog } from "./dogs/sagas";
 import counter from "./counter/reducer";
 import dogs from "./dogs/reducer";
 
+// global redux state
 export interface State {
   counter: CounterState;
   dogs: DogsState;
