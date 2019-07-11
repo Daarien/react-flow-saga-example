@@ -43,3 +43,8 @@ declare module "react-spinners" {
   declare export class ClipLoader extends React$Component<SizeProps> {}
   declare export class PulseLoader extends React$Component<SizeMarginProps> {}
 }
+
+declare module "react-spinners/ClipLoader" {
+  import typeof { ClipLoader } from "react-spinners";
+  declare export default ClipLoader;
+}

@@ -1,14 +1,13 @@
 // @flow
 import React from "react";
 import { DogsState } from "../../store/dogs/actions";
-import { ClipLoader } from "react-spinners";
+import ClipLoader from "react-spinners/ClipLoader";
 
 interface Props extends DogsState {
   getDog: () => void;
 }
 
 export default function Dogs({ url, loading, getDog }: Props) {
-  console.log("TCL: Dogs -> url", url);
   return (
     <div>
       <div>
