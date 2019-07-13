@@ -1,0 +1,8 @@
+{
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false,
+  "eslint.packageManager": "yarn",
+  "eslint.run": "onSave"
+}
