@@ -14,6 +14,8 @@ function* incrementAsync() {
 }
 
 // Our watcher Saga: spawn a new incrementAsync task on each INCREMENT_ASYNC
+// $FlowIgnore
 export function* watchIncrementAsync() {
+  // $FlowIgnore
   yield takeEvery(types.INCREMENT_ASYNC, incrementAsync);
 }

@@ -28,6 +28,8 @@ function* getDog() {
   }
 }
 
+// $FlowIgnore
 export function* watchGetDog() {
+  // $FlowIgnore
   yield takeEvery(types.DOG_REQUESTED, getDog);
 }

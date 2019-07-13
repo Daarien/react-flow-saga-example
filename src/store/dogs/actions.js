@@ -2,7 +2,8 @@ export const types = {
   DOG_REQUESTED: "dogs/DOG_REQUESTED",
   LOADING: "dogs/LOADING",
   FETCH_SUCCEEDED: "dogs/FETCH_SUCCEEDED",
-  FETCH_FAILED: "dogs/FETCH_FAILED"
+  FETCH_FAILED: "dogs/FETCH_FAILED",
+  RESET: "dogs/RESET"
 };
 
 type ActionTypes = $Keys<typeof types>;
