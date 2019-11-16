@@ -4,5 +4,8 @@
   "typescript.validate.enable": false,
   "javascript.validate.enable": false,
   "eslint.packageManager": "yarn",
-  "eslint.run": "onSave"
+  "eslint.run": "onSave",
+  "typescript.tsc.autoDetect": "off",
+  "typescript.surveys.enabled": false,
+  "typescript.suggest.enabled": false
 }
