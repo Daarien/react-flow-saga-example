@@ -1,6 +1,6 @@
 /* @flow */
 
-type Record<T = string, V = any> = { [T]: V };
+type Record<K, V> = { [K]: V };
 
 type Obj = Record<string, any>;
 
